@@ -1,0 +1,22 @@
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Cadastra novo usuário</title>
+    </head>
+    
+    <body>
+        <h2>Cadastre-se</h2>
+
+        <form method="post" action="../php/cad_usuario.php">
+            <label for="txtNome">Nome</label>
+            <input type="text" name="txtNome" id="txtNome" placeholder="Ex: Daniel">
+
+            <label for="txtLogin">Login</label>
+            <input type="text" name="txtLogin" id="txtLogin" placeholder="Ex: daniel.xds93">
+
+            <label for="txtSenha">Senha</label>
+            <input type="password" name="txtSenha" id="txtSenha">
+
+            <input type="submit" value="Cadastrar">
+        </form>
+    </body>
