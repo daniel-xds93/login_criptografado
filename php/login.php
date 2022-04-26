@@ -22,7 +22,7 @@
             $hash = $row["senha"];
 
             if(!password_verify($senha, $hash)){
-                echo("<script>alert('Senha inválida!');</script>")
+                echo("<script>alert('Senha inválida!');</script>");
             }else{
 
                 SESSION_START();
