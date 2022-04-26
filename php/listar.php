@@ -7,7 +7,7 @@
     <body>
 
         <table border="1">
-
+            
             <caption>Usuários Cadastrados</caption>
             <thead>
                 <tr>
@@ -16,13 +16,22 @@
                 </tr>
             </thead>
 
-            <tbody>
-                <tr>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </tbody>
+            <?php
 
+                require('dbConnection.php');
+
+                session_start();
+
+                if(!isset($_SESSION['login']) && !isset($_SESSION['senha'])){
+                    header("Location: sair.php");
+                }else{
+                    require('listagem.php');
+                }
+
+            ?>
+
+            </tbody>
+            <a href="sair.php">sair</a>
         </table>
 
     </body>
